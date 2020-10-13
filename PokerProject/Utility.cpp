@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 
+//The function takes one parameter of type string and one parameter of type char and returns parameter of type int.
 int indexOf(std::string& text, char pattern)
 {
     // where appears the pattern in the text?
@@ -17,6 +18,7 @@ int indexOf(std::string& text, char pattern)
     }
 }
 
+//The function takes two parameters of type char and returns parameter of type bool.
 bool LessThan(const char& a, const char& b)
 {
     //Checking if the index of a is smaller than the index of b.
@@ -26,6 +28,7 @@ bool LessThan(const char& a, const char& b)
     return ileft < iright;
 }
 
+//The function takes two parameters of type char and returns parameter of type bool.
 bool Podred(char left, char right)
 {
     //Checking if the two values are in order.
@@ -40,7 +43,7 @@ bool Podred(char left, char right)
 
 };
 
-
+//The function takes two parameters of type vector and returns parameter of type bool.
 bool IsStraightFlush(vector<char> cards, vector<char> boi)
 {
     // priemame che cards sa sortnati
@@ -53,6 +56,7 @@ bool IsStraightFlush(vector<char> cards, vector<char> boi)
 
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsFlush(vector <char> boi)
 {
     //Checking if the hand is flush.
@@ -63,6 +67,7 @@ bool IsFlush(vector <char> boi)
     return true;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsFullHouse(vector <char> cards)
 {
     //Checking if the hand is fullhouse.
@@ -94,6 +99,7 @@ bool IsFullHouse(vector <char> cards)
     return false;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool isFour(vector <char> cards)
 {
     //Checking if the hand is four.
@@ -115,6 +121,7 @@ bool isFour(vector <char> cards)
     return false;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsStraight(vector <char> cards)
 {
     //Checking if the hand is straight.
@@ -129,6 +136,7 @@ bool IsStraight(vector <char> cards)
     return true;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsTree(vector <char> cards)
 {
     //Checking if the hand is tree.
@@ -150,6 +158,7 @@ bool IsTree(vector <char> cards)
     return false;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsTwoPairs(vector <char> cards)
 {
     //Checking if the hand is two pairs.
@@ -171,6 +180,7 @@ bool IsTwoPairs(vector <char> cards)
     return false;
 };
 
+//The function takes parameter of type vector and returns parameter of type bool.
 bool IsPair(vector <char> cards)
 {
     //Checking if the hand is pair.

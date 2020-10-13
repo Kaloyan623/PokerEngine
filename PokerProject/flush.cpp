@@ -13,6 +13,7 @@ flush::flush(std::vector <char> cards) : Power(cards)
     sila = FLUSH;
 }
 
+//The function is expecting parameter of type Power and returns parameter of type Result.
  Result flush::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;    

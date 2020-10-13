@@ -11,6 +11,7 @@ Nonepower::Nonepower(std::vector<char> cards) : Power(cards)
     sila = NONE;
 }
 
+//The function is expecting parameter of type Power and returns parameter of type Result.
 Result Nonepower::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;

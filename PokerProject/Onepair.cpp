@@ -11,6 +11,7 @@ Onepair::Onepair(std::vector <char> cards) : Power(cards)
     sila = ONEPAIR;
 }
 
+//The function is expecting parameter of type Power and returns parameter of type Result.
 Result Onepair::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;

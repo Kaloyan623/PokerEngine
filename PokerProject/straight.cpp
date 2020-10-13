@@ -12,6 +12,7 @@ straight::straight(std::vector <char> cards) : Power(cards)
     sila = STRAIGHT;
 }
 
+//The function takes parameter of type Power and returns parameter of type Result.
 Result straight::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;

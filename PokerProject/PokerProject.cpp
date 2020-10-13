@@ -23,6 +23,7 @@
 #include "PokerHand.h"
 using namespace std;
 
+//The function takes two parameters of type PokerHand and returns parameter of type Result.
 __declspec(dllexport) Result compare(const PokerHand& player, const PokerHand& opponent)
 {
     return player.myPower->Compare(*opponent.myPower);       

@@ -11,6 +11,7 @@ Fullhouse::Fullhouse(std::vector <char> cards) : Power(cards)
     sila = FULLHOUSE;
 }
 
+//The function is expecting parameter of type Power and returns parameter of type Result.
  Result Fullhouse::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;

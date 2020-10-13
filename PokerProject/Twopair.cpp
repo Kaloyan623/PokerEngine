@@ -12,6 +12,7 @@ Twopair::Twopair(std::vector <char> cards) : Power(cards)
     sila = TWOPAIR;
 }
 
+//The function takes parameter of type Power and returns parameter of type Result.
 Result Twopair::Compare(Power& other)
 {
     if (other.sila != sila) return other.sila < sila ? Result::Win : Result::Loss;
