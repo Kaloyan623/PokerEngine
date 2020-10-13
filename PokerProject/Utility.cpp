@@ -19,6 +19,7 @@ int indexOf(std::string& text, char pattern)
 
 bool LessThan(const char& a, const char& b)
 {
+    //Checking if the index of a is smaller than the index of b.
     static std::string karti = "23456789TJQKA";
     int ileft = indexOf(karti, a);
     int iright = indexOf(karti, b);
@@ -27,6 +28,7 @@ bool LessThan(const char& a, const char& b)
 
 bool Podred(char left, char right)
 {
+    //Checking if the two values are in order.
     if (left == 'A' && right == '2')
     {
         return true;
@@ -53,6 +55,7 @@ bool IsStraightFlush(vector<char> cards, vector<char> boi)
 
 bool IsFlush(vector <char> boi)
 {
+    //Checking if the hand is flush.
     for (int i = 0; i < 4; i++)
     {
         if (boi[i] != boi[i + 1]) return false;
@@ -62,6 +65,7 @@ bool IsFlush(vector <char> boi)
 
 bool IsFullHouse(vector <char> cards)
 {
+    //Checking if the hand is fullhouse.
     bool isPair = false;
     bool isTree = false;
     for (int i = 0; i < cards.size(); i++)
@@ -92,6 +96,7 @@ bool IsFullHouse(vector <char> cards)
 
 bool isFour(vector <char> cards)
 {
+    //Checking if the hand is four.
     for (int i = 0; i < cards.size(); i++)
     {
         int count = 0;
@@ -112,6 +117,7 @@ bool isFour(vector <char> cards)
 
 bool IsStraight(vector <char> cards)
 {
+    //Checking if the hand is straight.
     if (cards[0] == '2' && cards[1] == '3' && cards[2] == '4' && cards[3] == '5' && cards[4] == 'A')
     {
         return true;
@@ -125,6 +131,7 @@ bool IsStraight(vector <char> cards)
 
 bool IsTree(vector <char> cards)
 {
+    //Checking if the hand is tree.
     for (int i = 0; i < cards.size(); i++)
     {
         int count = 0;
@@ -145,6 +152,7 @@ bool IsTree(vector <char> cards)
 
 bool IsTwoPairs(vector <char> cards)
 {
+    //Checking if the hand is two pairs.
     int count = 0;
     for (int i = 0; i < cards.size(); i++)
     {
@@ -165,6 +173,7 @@ bool IsTwoPairs(vector <char> cards)
 
 bool IsPair(vector <char> cards)
 {
+    //Checking if the hand is pair.
     for (int i = 0; i < cards.size(); i++)
     {
         for (int j = 0; j < cards.size(); j++)

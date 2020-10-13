@@ -1,9 +1,17 @@
 #pragma once
 #include "Power.h"
 
-struct PokerHand
+
+#ifdef POCKERPROJECT_CMPL
+#define POCKERPROJECT_API __declspec(dllexport)
+#else
+#define POCKERPROJECT_API __declspec(dllimport)
+#endif
+
+
+ struct PokerHand
 {
 	Power* myPower;
-	PokerHand(const char* pokerhand);
+	POCKERPROJECT_API PokerHand(const char* pokerhand);
 };
 

@@ -23,9 +23,9 @@
 #include "PokerHand.h"
 using namespace std;
 
-Result compare(const PokerHand& player, const PokerHand& opponent)
+__declspec(dllexport) Result compare(const PokerHand& player, const PokerHand& opponent)
 {
-    return player.myPower->Compare(*opponent.myPower);
+    return player.myPower->Compare(*opponent.myPower);       
 }
 
 int main()

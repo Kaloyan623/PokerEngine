@@ -15,9 +15,9 @@
 
 PokerHand::PokerHand(const char* pokerhand)
 {
-    std::vector <char> values;
-    std::vector <char> suits;
-    char k1 = pokerhand[0];
+    std::vector <char> values;            //This is the vector for the values of the cards.
+    std::vector <char> suits;             //This is the vector for the suits of the cards.
+    char k1 = pokerhand[0];                  
     char b1 = pokerhand[1];
     char k2 = pokerhand[3];
     char b2 = pokerhand[4];
@@ -27,7 +27,7 @@ PokerHand::PokerHand(const char* pokerhand)
     char b4 = pokerhand[10];
     char k5 = pokerhand[12];
     char b5 = pokerhand[13];
-    values.push_back(k1);
+    values.push_back(k1);              
     values.push_back(k2);
     values.push_back(k3);
     values.push_back(k4);
@@ -38,7 +38,7 @@ PokerHand::PokerHand(const char* pokerhand)
     suits.push_back(b4);
     suits.push_back(b5);
 
-    sort(values.begin(), values.end(), LessThan);
+    sort(values.begin(), values.end(), LessThan);   //I am sorting the vector.
     if (IsStraightFlush(values, suits))
     {
         myPower = new Straightflush(values);
